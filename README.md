@@ -1,1 +1,6 @@
 # PLSA
+
+Collaborative filtering aims at learning predictive models of user preferences, interests or behavior from community data. In this paper, we report on our ex- perience scaling up collaborative filtering using cloud computing and a Spark framework. In particular, we describe our approach for generating personal- ized recommendations using variants of the MovieLens data set. Our solution efficiently distributes computation in parallel and is relatively simple to imple- ment.
+Introduction
+Collaborative filtering is a technology that aims at learning predictive models of user prefer- ences, interests or behavior from community data, i.e. a database of available user preferences. The approach adopted in this paper is called probabilistic Latent Semantic Analysis (pLSA), a statistical model proposed by Hoffman (1999). In practise, this method requires complex computations on ever growing data sets, making scalability and parallelization essential.
+We will first present an overview pLSA and introduce the Spark framework. We then present several pLSA implementations and present our results across variants of the MovieLens dataset. Finally, we draw conclusions and discuss future possible improvements.
